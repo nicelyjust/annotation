@@ -1,0 +1,12 @@
+apply plugin: 'java-library'
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    // 注册一个APT功能
+    annotationProcessor 'com.google.auto.service:auto-service:1.0-rc6'
+    compileOnly 'com.google.auto.service:auto-service:1.0-rc6'
+    implementation 'com.squareup:javapoet:1.10.0'
+    implementation project(path: ':inject')
+}
+
