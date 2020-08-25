@@ -1,4 +1,4 @@
-package com.lifesense.annotation;
+package com.lifesense.annotation.ioc;
 
 /*
  *  @项目名：  Annotation

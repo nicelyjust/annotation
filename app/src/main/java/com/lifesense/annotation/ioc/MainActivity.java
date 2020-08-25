@@ -1,10 +1,11 @@
-package com.lifesense.annotation;
+package com.lifesense.annotation.ioc;
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.lifesense.annotation.R;
 import com.lifesense.annotation.annotation.OnClick;
 import com.nicely.inject.BindView;
 import com.nicely.inject.ContentView;
