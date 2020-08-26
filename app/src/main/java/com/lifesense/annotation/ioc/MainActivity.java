@@ -7,6 +7,7 @@ import android.widget.Toast;
 
 import com.lifesense.annotation.R;
 import com.lifesense.annotation.annotation.OnClick;
+import com.lifesense.annotation.inject.InjectMainActivity;
 import com.nicely.inject.BindView;
 import com.nicely.inject.ContentView;
 
@@ -33,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
     public void adc(View view){
         if (view.getId() == R.id.btn_1) {
             Toast.makeText(this,"button1 被点击",Toast.LENGTH_SHORT).show();
+            InjectMainActivity.start(this);
         }else if (view.getId() == R.id.btn_2) {
             Toast.makeText(this,"button2 被点击",Toast.LENGTH_SHORT).show();
         }
